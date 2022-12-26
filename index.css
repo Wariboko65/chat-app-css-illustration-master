@@ -1,0 +1,285 @@
+:root {
+    --paleviolet: hsl(276, 100%, 81%);
+    --moderateviolet: hsl(276, 55%, 52%);
+    --darkviolet: hsl(271, 15%, 43%);
+    --placeholdertext: hsl(206, 6%, 79%);
+    --mainheading: hsl(271, 36%, 24%);
+    --paragraph: hsl(270, 7%, 64%);
+    --gradienta: hsl(293, 100%, 63%);
+    --gradientb: hsl(264, 100%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --appbackground: hsl(270, 20%, 96%);
+    --bg: hsl(274, 19%, 93%);
+    --submitbtn: hsl(271, 36%, 24%);
+    --radiobtnoutline: hsl(289, 100%, 72%);
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    background-color: var(--appbackground);
+    margin: 0;
+    padding: 0;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.violet {
+    position: absolute;
+    height: 300px;
+    width: 110%;
+    left: -60%;
+    background-color: var(--gradienta);
+}
+.circle {
+    border-radius: 50%;
+    height: 740px;
+    background-image: linear-gradient(to bottom, transparent,  var(--gradienta), var(--gradientb));
+    top: -40px;
+    left: -60%;
+}
+.semi {
+    height: 420px;
+    width: 50%;
+    background: var(--bg);
+    border-radius: 450px 0 0 0;
+
+    position: absolute;
+    top: 59.9%;
+    right: 0;
+    z-index: -1;
+}
+.dog {
+    box-shadow: 0px 3px 10px 0 var(--placeholdertext);
+}
+.phone {
+    margin-block-start: 50px;
+    background-color: var(--white);
+    width: 360px;
+    padding: 15px;
+    border-radius: 50px;
+    position: relative;
+    box-shadow: 0px 15px 25px 0px var(--placeholdertext);
+}
+img {
+    height: 60px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-block-end: 10px;
+}
+.text {
+    width: 170px;
+    background-color: var(--paleviolet);
+    border-radius: 15px 15px 15px 5px;
+    padding: 1px 10px;
+    color: var(--moderateviolet);
+    margin-block-end: 10px;
+    font-size: 12px;
+    box-shadow: 0px 3px 10px 0 var(--placeholdertext);
+}
+.text2 {
+    background-color: var(--white);
+    font-size: 12px;
+    padding: 1px 10px;
+    margin-block-end: 10px;
+    display: inline-block;
+    margin-inline-start: 45%;
+    border-radius: 15px 15px 5px 15px;
+    color: var(--darkviolet);
+    box-shadow: 0px 3px 10px 0 var(--placeholdertext);
+}
+.ac {
+    margin-inline-start: 65%;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.back {
+    background-color: var(--appbackground);
+    border-radius: 40px;
+    padding: 15px;
+    box-shadow: 0px 3px 10px 0 var(--placeholdertext) inset;
+    position: relative;
+}
+.head {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    align-items: center;
+    margin-block-start: 30px;
+}
+.nut {
+    width: 200px;
+    height: 35px;
+    background-color: var(--white);
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    margin-left: -100px;
+    border-radius: 20px;
+    z-index: 1;
+}
+.w {
+    margin-block-start: 45px;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, var(--gradientb), var(--gradienta));
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 40px 40px 10px 10px;
+    padding: 20px;
+    height: 100px;
+    position: absolute;
+    box-shadow: 0 5px 10px 0 var(--paragraph) inset;
+    color: var(--white);
+}
+.a {
+    color: var(--paleviolet);
+}
+.top {
+    margin-block-start: 100px;
+}
+.avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--paleviolet);
+    margin-inline-end: 15px;
+}
+.name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-block-end: -8px;
+}
+.arrow {
+    font-size: 16px;
+    font-weight: bold;
+    margin-inline-end: 10px;
+    cursor: pointer;
+}
+.grad {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    width: 220px;
+    color: var(--white);
+    font-size: 12px;
+    border-radius: 15px 15px 15px 5px;
+    box-shadow: 0px 3px 10px 0 var(--placeholdertext);
+    background-image: linear-gradient(to right, var(--gradienta), var(--gradientb));
+}
+.before {
+    color: var(--paleviolet);
+}
+.b {
+    font-weight: bold;
+    font-size: 16px;
+}
+.grad::before {
+    content: "";
+    height: 15px;
+    width: 15px;
+    border: 1px solid var(--radiobtnoutline);
+    border-radius: 50%;
+    margin-inline-end: -40px;
+    margin-inline-start: -15px;
+}
+.message {
+    background-color: var(--white);
+    padding: 1px 30px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: var(--placeholdertext);
+    box-shadow: 0px 3px 10px 0 var(--placeholdertext);
+}
+.send2 {
+    background-color: var(--submitbtn);
+    border-radius: 50%;
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    font-size: 12px;
+    color:  var(--white);
+    margin-inline-end: -25px;
+}
+.down {
+    text-align: center;
+    margin: 10px 100px;
+}
+.down > h1 {
+    color: var(--mainheading);
+}
+.down > p {
+    color: var(--paragraph);
+}
+
+@media screen and (min-width: 992px) {
+    .violet {
+        position: absolute;
+        height: 600px;
+        width: 35%;
+        top: 0;
+        left: -10%;
+        border-radius: 0 0 50% 50%;
+        background-image: linear-gradient(to bottom, var(--gradienta), var(--gradientb));
+    }
+    .circle {
+        display: none;
+    }
+    .semi {
+        height: 100%;
+        width: 25%;
+        background: var(--bg);
+        border-radius: 650px 0 0 0;
+    
+        position: absolute;
+        top: 10.9%;
+        right: 0;
+        z-index: -1;
+    }
+    .circlee {
+        display: none;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+    .desktop {
+        flex-direction: 50%;
+        margin-inline-start: 19%;
+    }
+    .down {
+        margin-inline-start: -80px;
+        flex: 50%;
+        text-align: left;
+        width: 45ch;
+        padding: 20px;
+    }
+    .down > p, .down > h1, .down > .attribution {
+        margin: 25px 120px;
+    }
+
+}
